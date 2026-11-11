@@ -6,239 +6,187 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="RDRWorks — Retail Distribution Readiness. Jason Rider helps small brands get the big-box meeting, price it right, and ship the first truck on time. Flat fees.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;display=swap">
 <style>
-body{margin:0;background:#FAFAF7}
-a{color:#C2410C}a:hover{color:#9A3412}
 html{scroll-behavior:smooth}
-@media (max-width:640px){h1{font-size:40px !important}h2{font-size:30px !important}#doors>div{padding:28px !important}}
+body{margin:0;background:#F7F4EC;color:#1F1B16;font-family:"Source Serif 4",Georgia,serif;font-size:19px;line-height:1.6}
+a{color:#A63A0B}a:hover{color:#7A2A06}
+.page{max-width:720px;margin:0 auto;padding:0 28px}
+header{border-bottom:1px solid #1F1B16}
+.mast{max-width:720px;margin:0 auto;padding:28px 28px 18px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px}
+.mast .name{font-weight:700;font-size:26px;letter-spacing:-0.01em;text-decoration:none;color:#1F1B16}
+.mast .tag{font-style:italic;color:#5A5148;font-size:17px}
+nav{max-width:720px;margin:0 auto;padding:0 28px 14px;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:17px}
+nav a{color:#1F1B16;text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover{border-bottom-color:#1F1B16;color:#1F1B16}
+h1{font-size:44px;line-height:1.15;font-weight:700;letter-spacing:-0.015em;margin:64px 0 24px}
+h2{font-size:28px;line-height:1.25;font-weight:700;margin:72px 0 18px;padding-top:28px;border-top:1px solid #CFC7B8}
+h3{font-size:21px;font-weight:700;margin:40px 0 6px}
+p{margin:0 0 18px}
+.lede{font-size:22px;line-height:1.5}
+.small{font-size:16px;color:#5A5148}
+.button{display:inline-block;background:#1F1B16;color:#F7F4EC;text-decoration:none;padding:13px 22px;border-radius:2px;font-size:18px;min-height:44px;box-sizing:border-box}
+.button:hover{background:#A63A0B;color:#F7F4EC}
+.item{margin:0 0 24px}
+.line{display:flex;align-items:baseline;gap:10px;font-weight:600}
+.line .dots{flex:1;border-bottom:2px dotted #8C8274;transform:translateY(-5px);min-width:24px}
+.line .price{white-space:nowrap}
+.item p{margin:4px 0 0;font-size:17px;color:#3B342C}
+ul.plain{margin:0 0 18px;padding-left:22px}
+ul.plain li{margin:0 0 6px}
+dl{margin:0}
+dt{font-weight:600;margin-top:16px}
+dd{margin:2px 0 0;color:#3B342C;font-size:17px}
+.about{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.about img{width:200px;max-width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;filter:grayscale(15%)}
+.about div{flex:1 1 320px;min-width:0}
+.faq dt{font-size:19px}
+footer{max-width:720px;margin:96px auto 0;padding:24px 28px 48px;border-top:1px solid #1F1B16;font-size:15px;color:#5A5148;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+@media (max-width:600px){body{font-size:18px}h1{font-size:34px;margin-top:44px}h2{font-size:25px}.lede{font-size:20px}}
 </style>
 </head>
 <body>
-<div style="width: 100%; background: #FAFAF7; color: #1C1917; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.6">
 
-<header style="border-bottom: 1px solid #E7E5E4">
-<div style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#top" style="text-decoration: none; color: #1C1917; display: flex; align-items: baseline; gap: 12px">
-<span style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.01em">RDRWorks</span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #57534E; text-transform: uppercase; letter-spacing: 0.08em">Retail Distribution Readiness</span>
-</a>
-<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; font-size: 15px">
-<a href="#services" style="color: #1C1917; text-decoration: none">Services</a>
-<a href="#doors" style="color: #1C1917; text-decoration: none">The doors</a>
-<a href="#about" style="color: #1C1917; text-decoration: none">About</a>
-<a href="#faq" style="color: #1C1917; text-decoration: none">FAQ</a>
-<a href="#contact" style="background: #C2410C; color: #FFFFFF; text-decoration: none; padding: 12px 20px; border-radius: 4px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book a fit call</a>
-</nav>
+<header>
+<div class="mast">
+<a class="name" href="#top">RDRWorks</a>
+<span class="tag">Retail Distribution Readiness &middot; Jason Rider</span>
 </div>
+<nav aria-label="Main">
+<a href="#services">Services &amp; prices</a>
+<a href="#events">Pitch events</a>
+<a href="#about">About</a>
+<a href="#questions">Questions</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px 80px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
-<div style="flex: 999 1 560px; min-width: 0">
-<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #C2410C">Big-box onboarding for small brands</p>
-<h1 style="margin: 0 0 28px; font-family: Archivo, sans-serif; font-weight: 800; font-size: 60px; line-height: 1.04; letter-spacing: -0.02em">Get the meeting. Get the yes. Get the first truck out on time.</h1>
-<p style="margin: 0 0 36px; font-size: 20px; color: #44403C; max-width: 620px">I took a patented garden product into about 960 Walmart stores as essentially a one-man company, then into Lowe's, Tractor Supply, QVC and Amazon. Now I help small brands do the same, for flat fees, with no retainer.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 16px">
-<a href="#contact" style="background: #C2410C; color: #FFFFFF; text-decoration: none; padding: 16px 28px; border-radius: 4px; font-weight: 600; font-size: 17px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book a 20-minute fit call</a>
-<a href="#services" style="color: #1C1917; text-decoration: none; padding: 16px 28px; border-radius: 4px; font-weight: 600; font-size: 17px; border: 1.5px solid #1C1917; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">See services and prices</a>
-</div>
-</div>
-<div style="flex: 1 1 300px; min-width: 0; border: 1.5px solid #1C1917; border-radius: 4px; background: #FFFFFF">
-<div style="padding: 14px 20px; border-bottom: 1.5px dashed #A8A29E; font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #57534E">Track record</div>
-<div style="padding: 20px; border-bottom: 1px solid #E7E5E4">
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 44px; line-height: 1">~960</div>
-<div style="font-size: 15px; color: #57534E">Walmart stores, one product line</div>
-</div>
-<div style="padding: 20px; border-bottom: 1px solid #E7E5E4">
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 44px; line-height: 1">5</div>
-<div style="font-size: 15px; color: #57534E">Retail channels: Walmart, Lowe's, Tractor Supply, QVC, Amazon</div>
-</div>
-<div style="padding: 20px">
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 44px; line-height: 1">1</div>
-<div style="font-size: 15px; color: #57534E">Person who did every step himself</div>
-</div>
-</div>
-</section>
+<main class="page" id="top">
 
-<section style="background: #1C1917; color: #E7E5E4">
-<div style="max-width: 1200px; margin: 0 auto; padding: 88px 32px">
-<p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #FDBA74">The part nobody warns you about</p>
-<h2 style="margin: 0 0 20px; font-family: Archivo, sans-serif; font-weight: 800; font-size: 42px; line-height: 1.1; color: #FFFFFF; max-width: 760px">The buyer loved it. Then the onboarding packet landed.</h2>
-<p style="margin: 0 0 48px; font-size: 18px; max-width: 680px; color: #D6D3D1">Every piece below can stall a first order or cost you in deductions. I've been through all of them with my own product, my own money and no ops team.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
-<div style="border: 1px solid #44403C; border-radius: 4px; padding: 20px"><div style="font-weight: 600; color: #FFFFFF; margin-bottom: 4px">Supplier agreement</div><div style="font-size: 15px; color: #D6D3D1">Allowances, payment terms, returns. What you're actually signing.</div></div>
-<div style="border: 1px solid #44403C; border-radius: 4px; padding: 20px"><div style="font-weight: 600; color: #FFFFFF; margin-bottom: 4px">Item setup</div><div style="font-size: 15px; color: #D6D3D1">Attributes, images, cost and retail, in the retailer's systems.</div></div>
-<div style="border: 1px solid #44403C; border-radius: 4px; padding: 20px"><div style="font-weight: 600; color: #FFFFFF; margin-bottom: 4px">GS1 and GTINs</div><div style="font-size: 15px; color: #D6D3D1">Each, inner pack and case codes, built as a hierarchy that holds.</div></div>
-<div style="border: 1px solid #44403C; border-radius: 4px; padding: 20px"><div style="font-weight: 600; color: #FFFFFF; margin-bottom: 4px">Packaging specs</div><div style="font-size: 15px; color: #D6D3D1">Secondary packaging, case labels, pallet configuration.</div></div>
-<div style="border: 1px solid #44403C; border-radius: 4px; padding: 20px"><div style="font-weight: 600; color: #FFFFFF; margin-bottom: 4px">Routing guide</div><div style="font-size: 15px; color: #D6D3D1">Load requests, carriers, appointment windows, the fines for missing them.</div></div>
-<div style="border: 1px solid #44403C; border-radius: 4px; padding: 20px"><div style="font-weight: 600; color: #FFFFFF; margin-bottom: 4px">Shipping documents</div><div style="font-size: 15px; color: #D6D3D1">BOLs, ASNs and the EDI behind them.</div></div>
-<div style="border: 1px solid #44403C; border-radius: 4px; padding: 20px"><div style="font-weight: 600; color: #FFFFFF; margin-bottom: 4px">Pricing</div><div style="font-size: 15px; color: #D6D3D1">A cost price that still leaves you money after the retailer's cut.</div></div>
-<div style="border: 1px solid #44403C; border-radius: 4px; padding: 20px"><div style="font-weight: 600; color: #FFFFFF; margin-bottom: 4px">Deductions</div><div style="font-size: 15px; color: #D6D3D1">Reading the first remittance and knowing what to dispute.</div></div>
-</div>
-</div>
-</section>
+<h1>I help small brands get onto big-box shelves, and make money once they&rsquo;re there.</h1>
 
-<section id="services" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px 40px">
-<p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #C2410C">Services</p>
-<h2 style="margin: 0 0 16px; font-family: Archivo, sans-serif; font-weight: 800; font-size: 42px; line-height: 1.1; max-width: 760px">Fixed scope. Flat fee. Both sides of the door.</h2>
-<p style="margin: 0 0 56px; font-size: 18px; color: #44403C; max-width: 680px">Start wherever you are. Most brands that come in before the yes come back for help after it.</p>
+<p class="lede">I took a patented garden product into about 960 Walmart stores, mostly by myself, and later into Lowe&rsquo;s, Tractor Supply, QVC and Amazon. I did the item setup, the barcodes, the packaging specs, the routing and the shipping paperwork, and I paid for my own mistakes along the way.</p>
 
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-bottom: 20px; border-bottom: 1.5px solid #1C1917; padding-bottom: 12px">
-<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 700; font-size: 26px">Before the yes</h3>
-<span style="font-size: 15px; color: #57534E">Getting in front of the buyer</span>
+<p>Now I do that work alongside other founders. Each job has a fixed scope and a flat fee. There&rsquo;s no retainer, and you deal with me, not a junior account manager.</p>
+
+<p><a class="button" href="#contact">Book a 20-minute call</a></p>
+
+<h2>What happens after the buyer says yes</h2>
+
+<p>Getting the yes feels like the finish line. Then the onboarding packet arrives. It covers the supplier agreement and its allowances, item setup, barcodes for each unit and case, packaging and labeling specs, a routing guide with fines for missed pickups, shipping documents and EDI, and a first order with a ship date you can&rsquo;t miss.</p>
+
+<p>None of it is hard once you&rsquo;ve done it. All of it is confusing the first time, and small mistakes come back later as deductions on your payments. That&rsquo;s the part I help with.</p>
+
+<h2 id="services">Services and prices</h2>
+
+<p>Start wherever you are. Many brands that come to me before a yes come back for help after one.</p>
+
+<h3>Before a buyer says yes</h3>
+
+<div class="item">
+<div class="line"><span>Price Check</span><span class="dots"></span><span class="price">$750</span></div>
+<p>Your price worked from the shelf down to the cash you actually keep, after the retailer&rsquo;s margin, allowances, freight and deductions. Also a price ladder so your channels don&rsquo;t undercut each other, and the lowest cost price you can quote a buyer.</p>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 64px">
-<div style="background: #FFFFFF; border: 1px solid #D6D3D1; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px">Price Check</div>
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px; color: #C2410C">$750</div>
-<p style="margin: 0; font-size: 15px; color: #44403C">Your price, worked from the shelf down to the cash you keep. A price ladder so your channels don't undercut each other, and the lowest number you can quote a buyer.</p>
+<div class="item">
+<div class="line"><span>Pitch Ready</span><span class="dots"></span><span class="price">$950</span></div>
+<p>Price Check, plus your RangeMe profile set up properly, a review of your sell sheet, the pitch events that suit your product, and one practice pitch with me playing the buyer.</p>
 </div>
-<div style="background: #FFFFFF; border: 1px solid #D6D3D1; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px">Pitch Ready</div>
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px; color: #C2410C">$950</div>
-<p style="margin: 0; font-size: 15px; color: #44403C">Price Check, plus your RangeMe profile built or fixed, your sell sheet reviewed, the pitch events that fit your category, and one mock buyer pitch.</p>
+<div class="item">
+<div class="line"><span>Showcase Prep</span><span class="dots"></span><span class="price">$1,500</span></div>
+<p>Pitch Ready, plus your application for one specific pitch event written together, two rehearsals, and a plan for following up afterward.</p>
 </div>
-<div style="background: #FFFFFF; border: 1px solid #D6D3D1; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px">Showcase Prep</div>
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px; color: #C2410C">$1,500</div>
-<p style="margin: 0; font-size: 15px; color: #44403C">Pitch Ready, plus your application for one named pitch event written with you, two rehearsals, and a plan for following up afterward.</p>
-</div>
-<div style="background: #1C1917; color: #E7E5E4; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px; color: #FFFFFF">Direct to Walmart</div>
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 24px; color: #FDBA74">By invitation</div>
-<p style="margin: 0; font-size: 15px; color: #D6D3D1">Walmart has asked me to bring them other products. A few times a year I take one I'd stake my name on. Paid as a share of sales, not up front.</p>
-</div>
+<div class="item">
+<div class="line"><span>Direct introduction to Walmart</span><span class="dots"></span><span class="price">By invitation</span></div>
+<p>Walmart has asked me to bring them other products. A few times a year I take one I&rsquo;m willing to put my name behind. This is paid as a percentage of sales, agreed in writing beforehand, not as an up-front fee.</p>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-bottom: 20px; border-bottom: 1.5px solid #1C1917; padding-bottom: 12px">
-<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 700; font-size: 26px">Packaging</h3>
-<span style="font-size: 15px; color: #57534E">Retail-ready packaging, managed start to print</span>
+<h3>Packaging</h3>
+
+<div class="item">
+<div class="line"><span>Package &amp; Brand Review</span><span class="dots"></span><span class="price">$395</span></div>
+<p>A careful look at the details before a buyer or a printer sees them: what reads from shelf distance, barcodes and required text against the retailer&rsquo;s specs, consistency across packaging, sell sheet and listing, and a list of fixes in order of importance. Credited toward a packaging project within 30 days.</p>
 </div>
-<div style="background: #FFFFFF; border: 1px solid #D6D3D1; border-radius: 4px; padding: 32px; display: flex; flex-wrap: wrap; gap: 32px; margin-bottom: 20px">
-<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px">Packaging Project</div>
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px; color: #C2410C">From $2,500</div>
-<p style="margin: 0; font-size: 15px; color: #44403C">Management fee, up to three SKUs. Designer and printer are paid directly by you, at their rates, with no markup.</p>
-</div>
-<ul style="flex: 2 1 420px; min-width: 0; margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #44403C">
-<li>A design brief built around the shelf and the retailer's packaging specs, not just the look</li>
-<li>Finding and managing the designer, with checkpoints so problems surface early</li>
-<li>Dielines, barcode placement, required claims and case and inner-pack labels checked before anything prints</li>
-<li>Printer quotes, proofs and the press check through to delivery</li>
-</ul>
+<div class="item">
+<div class="line"><span>Packaging Project</span><span class="dots"></span><span class="price">from $2,500</span></div>
+<p>I manage the job from brief to delivered cartons, for up to three products: the design brief, finding and managing the designer, dielines and labels checked before print, then printer quotes, proofs and the press check. You pay the designer and printer directly at their own rates. I don&rsquo;t mark them up.</p>
 </div>
 
-<div style="background: #FFFFFF; border: 1px solid #D6D3D1; border-radius: 4px; padding: 32px; display: flex; flex-wrap: wrap; gap: 32px; margin-bottom: 64px">
-<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px">Package &amp; Brand Review</div>
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px; color: #C2410C">$395</div>
-<p style="margin: 0; font-size: 15px; color: #44403C">A critical eye on the details before a buyer or a printer sees them. Credited toward a Packaging Project within 30 days.</p>
+<h3>After a buyer says yes</h3>
+
+<div class="item">
+<div class="line"><span>Packet Review</span><span class="dots"></span><span class="price">$450</span></div>
+<p>A 90-minute walk through your onboarding packet, followed by a written list of gaps, with whatever blocks your first order at the top. Credited in full toward Readiness within 30 days.</p>
 </div>
-<ul style="flex: 2 1 420px; min-width: 0; margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #44403C">
-<li>Every panel marked up: what reads at shelf distance, what gets lost, what's missing</li>
-<li>Barcode, claims, required text and case labels checked against retailer specs</li>
-<li>Brand consistency across packaging, sell sheet and listing</li>
-<li>A ranked fix list: what to change before print, and what can wait</li>
-</ul>
+<div class="item">
+<div class="line"><span>Readiness</span><span class="dots"></span><span class="price">$1,950</span></div>
+<p>Item setup, barcodes and case labels, a packaging spec check, a routing compliance plan, shipping document templates, help choosing an EDI provider, and your supplier agreement explained in plain English. Usually two to three weeks.</p>
+</div>
+<div class="item">
+<div class="line"><span>First Truck</span><span class="dots"></span><span class="price">$2,950</span></div>
+<p>Readiness, plus my help through your first order: the load request, pickup, bill of lading, on-time delivery, and a look at your first payment for deductions you shouldn&rsquo;t have taken.</p>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-bottom: 20px; border-bottom: 1.5px solid #1C1917; padding-bottom: 12px">
-<h3 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 700; font-size: 26px">After the yes</h3>
-<span style="font-size: 15px; color: #57534E">From the buyer's yes to the first truck</span>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
-<div style="background: #FFFFFF; border: 1px solid #D6D3D1; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px">Packet Review</div>
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px; color: #C2410C">$450</div>
-<p style="margin: 0; font-size: 15px; color: #44403C">A 90-minute walk through your onboarding packet and a written gap list, ranked by what blocks your first PO. Credited in full toward Readiness within 30 days.</p>
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #57534E; text-transform: uppercase; letter-spacing: 0.08em">1 week</div>
-</div>
-<div style="background: #FFFFFF; border: 2px solid #C2410C; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px">Readiness</div>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; background: #C2410C; color: #FFFFFF; padding: 4px 8px; border-radius: 2px">Most chosen</span>
-</div>
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px; color: #C2410C">$1,950</div>
-<p style="margin: 0; font-size: 15px; color: #44403C">Item setup, GS1, packaging spec check, a routing compliance plan, shipping document templates, an EDI provider pick, and your supplier agreement explained in plain English.</p>
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #57534E; text-transform: uppercase; letter-spacing: 0.08em">2–3 weeks</div>
-</div>
-<div style="background: #FFFFFF; border: 1px solid #D6D3D1; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<div style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px">First Truck</div>
-<div style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 32px; color: #C2410C">$2,950</div>
-<p style="margin: 0; font-size: 15px; color: #44403C">Readiness, plus hands-on support through your first order: load request, pickup, BOL, on-time delivery, and a review of your first remittance for deductions.</p>
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #57534E; text-transform: uppercase; letter-spacing: 0.08em">Through first PO paid</div>
-</div>
-</div>
-</section>
+<p class="small">Fixed-price jobs are paid half up front and half at handoff. The two smaller reviews and Price Check are paid up front.</p>
 
-<section id="doors" style="max-width: 1200px; margin: 0 auto; padding: 72px 32px">
-<div style="background: #FFFFFF; border: 1.5px solid #1C1917; border-radius: 4px; padding: 48px; display: flex; flex-wrap: wrap; gap: 48px">
-<div style="flex: 1 1 320px; min-width: 0">
-<p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #C2410C">The doors most brands miss</p>
-<h2 style="margin: 0 0 16px; font-family: Archivo, sans-serif; font-weight: 800; font-size: 36px; line-height: 1.1">Cold emails to buyers rarely work. These do.</h2>
-<p style="margin: 0; font-size: 16px; color: #44403C">The big chains run yearly events where small suppliers pitch buyers directly, and most applications go through RangeMe. Most founders I talk to have never heard of either.</p>
-</div>
-<div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column">
-<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px 0; border-bottom: 1px solid #E7E5E4"><div style="flex: 1 1 200px; font-weight: 600">Walmart Open Call</div><div style="flex: 2 1 260px; font-size: 15px; color: #44403C">U.S.-made products. Applications in summer, pitch day in Bentonville in October.</div></div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px 0; border-bottom: 1px solid #E7E5E4"><div style="flex: 1 1 200px; font-weight: 600">Road to Open Call</div><div style="flex: 2 1 260px; font-size: 15px; color: #44403C">Walmart's regional pitch days, spring into early summer.</div></div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px 0; border-bottom: 1px solid #E7E5E4"><div style="flex: 1 1 200px; font-weight: 600">Lowe's Into the Blue</div><div style="flex: 2 1 260px; font-size: 15px; color: #44403C">New suppliers only. Applications in August, pitch day in the fall.</div></div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px 0; border-bottom: 1px solid #E7E5E4"><div style="flex: 1 1 200px; font-weight: 600">Tractor Supply Open Buying Days</div><div style="flex: 2 1 260px; font-size: 15px; color: #44403C">Products that fit rural life, pitched online.</div></div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px 0"><div style="flex: 1 1 200px; font-weight: 600">RangeMe</div><div style="flex: 2 1 260px; font-size: 15px; color: #44403C">The listing buyers browse, and the application route for most of the events above.</div></div>
-</div>
-</div>
-</section>
+<h2 id="events">Pitch events most small brands don&rsquo;t know about</h2>
 
-<section style="max-width: 1200px; margin: 0 auto; padding: 24px 32px 88px">
-<p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #C2410C">How it works</p>
-<h2 style="margin: 0 0 40px; font-family: Archivo, sans-serif; font-weight: 800; font-size: 36px; line-height: 1.1">One person, start to finish.</h2>
-<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px">
-<li style="border-top: 3px solid #1C1917; padding-top: 16px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C2410C">01</div><div style="font-weight: 600; margin: 4px 0">Fit call</div><div style="font-size: 15px; color: #44403C">Twenty minutes, free. Where you are and what you need.</div></li>
-<li style="border-top: 3px solid #1C1917; padding-top: 16px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C2410C">02</div><div style="font-weight: 600; margin: 4px 0">You send the paperwork</div><div style="font-size: 15px; color: #44403C">Your packet, agreement, specs or sell sheet, whatever applies.</div></li>
-<li style="border-top: 3px solid #1C1917; padding-top: 16px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C2410C">03</div><div style="font-weight: 600; margin: 4px 0">Gap list in 48 hours</div><div style="font-size: 15px; color: #44403C">Ranked by what blocks you first.</div></li>
-<li style="border-top: 3px solid #1C1917; padding-top: 16px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C2410C">04</div><div style="font-weight: 600; margin: 4px 0">Working sessions</div><div style="font-size: 15px; color: #44403C">Two or three calls against a shared checklist.</div></li>
-<li style="border-top: 3px solid #1C1917; padding-top: 16px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C2410C">05</div><div style="font-weight: 600; margin: 4px 0">Handoff</div><div style="font-size: 15px; color: #44403C">Templates, a ship-day checklist and a recorded walkthrough you keep.</div></li>
-</ol>
-</section>
+<p>Cold emails to buyers rarely get answered. The large chains run yearly events where small suppliers pitch their buyers directly, and most of the applications go through a site called RangeMe. A few worth knowing:</p>
 
-<section id="about" style="background: #F0EFEA; border-top: 1px solid #E7E5E4; border-bottom: 1px solid #E7E5E4">
-<div style="max-width: 1200px; margin: 0 auto; padding: 88px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
-<img src="jason-rider.jpg" alt="Jason Rider" width="720" height="720" style="flex: 0 1 320px; min-width: 240px; width: 320px; max-width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; border: 1.5px solid #1C1917">
-<div style="flex: 999 1 480px; min-width: 0">
-<p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #C2410C">About</p>
-<h2 style="margin: 0 0 24px; font-family: Archivo, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1">I learned it the expensive way, so you don't have to.</h2>
-<p style="margin: 0 0 18px; color: #292524">I'm Jason Rider. I founded C-BITE, a patented modular plant support system, and took it into about 960 Walmart stores, then Lowe's, Tractor Supply, QVC and Amazon. For most of that run it was essentially me: setting up items, building the GS1 hierarchy, meeting packaging specs, routing loads, cutting BOLs and fighting deductions.</p>
-<p style="margin: 0 0 18px; color: #292524">I priced one product across all those channels without them undercutting each other. I've negotiated the supplier agreement, lived with its allowances, and read every remittance.</p>
-<p style="margin: 0; color: #292524">Before that: Peace Corps in Chile and an MBA from Leeds. Self-employed since 2013. Based in Fort Collins, Colorado.</p>
+<dl>
+<dt>Walmart Open Call</dt>
+<dd>For products made, grown or assembled in the U.S. Applications open in summer, and the pitch day is in Bentonville in October.</dd>
+<dt>Walmart Road to Open Call</dt>
+<dd>Regional pitch days around the country in spring and early summer.</dd>
+<dt>Lowe&rsquo;s Into the Blue</dt>
+<dd>For suppliers new to Lowe&rsquo;s. Applications in August, with a pitch day in the fall.</dd>
+<dt>Tractor Supply Open Buying Days</dt>
+<dd>For products that suit rural life, pitched online.</dd>
+<dt>RangeMe</dt>
+<dd>The product listing that retail buyers browse, and the way into most of the events above.</dd>
+</dl>
+
+<h2>How we&rsquo;d work together</h2>
+
+<p>We start with a free 20-minute call so I can hear where you are and tell you honestly whether I can help. If it&rsquo;s a fit, you send me whatever paperwork you have, and within two days I send back a list of what needs doing, most urgent first. We work through it over two or three calls and a shared checklist. At the end you keep the templates, a ship-day checklist and a recorded walkthrough, so you can do it yourself next time.</p>
+
+<h2 id="about">About me</h2>
+
+<div class="about">
+<img src="jason-rider.jpg" alt="Jason Rider" width="720" height="720">
+<div>
+<p>I&rsquo;m Jason Rider. I founded C-BITE, a patented modular plant support system, and built it into about 960 Walmart stores plus Lowe&rsquo;s, Tractor Supply, QVC and Amazon. For most of that time the operations team was me.</p>
+<p>I&rsquo;ve priced one product across five channels without them undercutting each other, managed packaging from brief to press, negotiated a supplier agreement and lived with its terms, and read every payment and deduction that came after.</p>
+<p>Before that I served in the Peace Corps in Chile and earned an MBA at Leeds. I&rsquo;ve been self-employed since 2013 and live in Fort Collins, Colorado.</p>
 </div>
 </div>
-</section>
 
-<section id="faq" style="max-width: 900px; margin: 0 auto; padding: 96px 32px">
-<p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #C2410C">Questions</p>
-<h2 style="margin: 0 0 40px; font-family: Archivo, sans-serif; font-weight: 800; font-size: 36px; line-height: 1.1">Before you book</h2>
-<div style="border-top: 1.5px solid #1C1917">
-<div style="padding: 24px 0; border-bottom: 1px solid #D6D3D1"><h3 style="margin: 0 0 8px; font-size: 18px; font-weight: 600">Who is this for?</h3><p style="margin: 0; color: #44403C">Founders with a physical product and a small team, usually one to five people with no retail ops background. Hard goods, home and garden, pet, outdoor and general merchandise fit best.</p></div>
-<div style="padding: 24px 0; border-bottom: 1px solid #D6D3D1"><h3 style="margin: 0 0 8px; font-size: 18px; font-weight: 600">Who isn't it for?</h3><p style="margin: 0; color: #44403C">Food brands that need FDA or food-safety work, and sellers who only list on Walmart Marketplace.</p></div>
-<div style="padding: 24px 0; border-bottom: 1px solid #D6D3D1"><h3 style="margin: 0 0 8px; font-size: 18px; font-weight: 600">Can you guarantee a buyer says yes?</h3><p style="margin: 0; color: #44403C">No, and be wary of anyone who does. I can make sure your price works, your pitch is ready and you're applying through the right door.</p></div>
-<div style="padding: 24px 0; border-bottom: 1px solid #D6D3D1"><h3 style="margin: 0 0 8px; font-size: 18px; font-weight: 600">How does Direct to Walmart get paid?</h3><p style="margin: 0; color: #44403C">A percentage of your net Walmart sales for a set term, agreed in writing before anything is pitched. I only take products I believe in.</p></div>
-<div style="padding: 24px 0; border-bottom: 1px solid #D6D3D1"><h3 style="margin: 0 0 8px; font-size: 18px; font-weight: 600">How do I pay for the fixed packages?</h3><p style="margin: 0; color: #44403C">Half to start and half at handoff. Packet Review and Price Check are paid up front.</p></div>
-</div>
-</section>
+<h2 id="questions">Questions people ask</h2>
 
-<section id="contact" style="background: #1C1917; color: #E7E5E4">
-<div style="max-width: 900px; margin: 0 auto; padding: 96px 32px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 24px">
-<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1; color: #FFFFFF">Got a yes, or want one?</h2>
-<p style="margin: 0; font-size: 18px; color: #D6D3D1; max-width: 560px">Twenty minutes, no charge. Tell me where you are and I'll tell you honestly whether I can help.</p>
-<a href="https://calendar.app.google/Sritw7s5EyKaDSVr5" target="_blank" rel="noopener" style="background: #C2410C; color: #FFFFFF; text-decoration: none; padding: 18px 32px; border-radius: 4px; font-weight: 600; font-size: 18px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book a fit call</a>
-<p style="margin: 0; font-size: 15px; color: #D6D3D1">Or email <a href="mailto:jason@rdrworks.com" style="color: #FDBA74">jason@rdrworks.com</a></p>
-</div>
-</section>
+<dl class="faq">
+<dt>Who do you work with?</dt>
+<dd>Founders with a physical product and a small team, often one to five people without a retail operations background. Home and garden, pet, outdoor and general merchandise suit me best.</dd>
+<dt>Who isn&rsquo;t a good fit?</dt>
+<dd>Food brands that need FDA or food-safety work, and sellers who only list on Walmart&rsquo;s online marketplace.</dd>
+<dt>Can you guarantee a buyer will say yes?</dt>
+<dd>No, and I&rsquo;d be wary of anyone who does. I can make sure your price works, your pitch is ready and you&rsquo;re applying through the right door.</dd>
+<dt>How do Walmart introductions work?</dt>
+<dd>If I think your product fits, we agree in writing on a percentage of your net Walmart sales for a set period before I bring it to anyone. I only take on a few a year.</dd>
+</dl>
 
-<footer style="max-width: 1200px; margin: 0 auto; padding: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: #57534E">
-<span>RDRWorks — Retail Distribution Readiness · Jason Rider · Fort Collins, Colorado</span>
+<h2 id="contact">Get in touch</h2>
+
+<p>Book a free 20-minute call, or email me if you&rsquo;d rather start in writing.</p>
+
+<p><a class="button" href="https://calendar.app.google/Sritw7s5EyKaDSVr5" target="_blank" rel="noopener">Book a call</a></p>
+
+<p>Email: <a href="mailto:jason@rdrworks.com">jason@rdrworks.com</a></p>
+
+</main>
+
+<footer>
+<span>RDRWorks &middot; Jason Rider &middot; Fort Collins, Colorado</span>
 <span>Not affiliated with any retailer named on this page.</span>
 </footer>
 
-</div>
 </body>
 </html>
