@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Big-Box Price Waterfall Calculator: What You Keep After Retailer Margin and Allowances | RDRWorks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free calculator for brands selling to Walmart, Lowe's or Tractor Supply. Enter your shelf price, retailer margin, allowances, deductions, freight and landed cost to see what you actually keep, and the lowest cost price you can quote a buyer.">
+<link rel="canonical" href="https://rdrworks.com/price-waterfall.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#F7F4EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F7F4EC;color:#1F1B16;font-family:"Source Serif 4",Georgia,serif;font-size:19px;line-height:1.6}
+a{color:#A63A0B}a:hover{color:#7A2A06}
+.page{max-width:720px;margin:0 auto;padding:0 28px}
+header{border-bottom:1px solid #1F1B16}
+.mast{max-width:720px;margin:0 auto;padding:28px 28px 18px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px}
+.mast .name{font-weight:700;font-size:26px;letter-spacing:-0.01em;text-decoration:none;color:#1F1B16}
+.mast .tag{font-style:italic;color:#5A5148;font-size:17px}
+nav{max-width:720px;margin:0 auto;padding:0 28px 14px;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:17px}
+nav a{color:#1F1B16;text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover{border-bottom-color:#1F1B16;color:#1F1B16}
+h1{font-size:44px;line-height:1.15;font-weight:700;letter-spacing:-0.015em;margin:64px 0 24px}
+h2{font-size:28px;line-height:1.25;font-weight:700;margin:72px 0 18px;padding-top:28px;border-top:1px solid #CFC7B8}
+h3{font-size:21px;font-weight:700;margin:40px 0 6px}
+p{margin:0 0 18px}
+.lede{font-size:22px;line-height:1.5}
+.small{font-size:16px;color:#5A5148}
+.button{display:inline-block;background:#1F1B16;color:#F7F4EC;text-decoration:none;padding:13px 22px;border-radius:2px;font-size:18px;min-height:44px;box-sizing:border-box}
+.button:hover{background:#A63A0B;color:#F7F4EC}
+.item{margin:0 0 24px}
+.line{display:flex;align-items:baseline;gap:10px;font-weight:600}
+.line .dots{flex:1;border-bottom:2px dotted #8C8274;transform:translateY(-5px);min-width:24px}
+.line .price{white-space:nowrap}
+.item p{margin:4px 0 0;font-size:17px;color:#3B342C}
+ul.plain{margin:0 0 18px;padding-left:22px}
+ul.plain li{margin:0 0 6px}
+dl{margin:0}
+dt{font-weight:600;margin-top:16px}
+dd{margin:2px 0 0;color:#3B342C;font-size:17px}
+.about{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.about img{width:200px;max-width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;filter:grayscale(15%)}
+.about div{flex:1 1 320px;min-width:0}
+.faq dt{font-size:19px}
+.byline{display:flex;align-items:center;gap:16px;margin:8px 0 28px}
+.byline img{width:76px;height:76px;object-fit:cover;border-radius:50%}
+.byline p{margin:0;font-size:17px;line-height:1.45}
+figure{margin:0}
+.work{display:flex;flex-wrap:wrap;gap:20px;margin:8px 0 32px}
+.work figure{flex:1 1 300px;min-width:0}
+.work img{width:100%;height:auto;display:block;border:1px solid #CFC7B8;background:#fff}
+.work figcaption{font-size:15px;color:#5A5148;margin-top:8px;line-height:1.45}
+.hook{font-style:italic;color:#3B342C;margin:2px 0 0;font-size:17px}
+footer{max-width:720px;margin:96px auto 0;padding:24px 28px 48px;border-top:1px solid #1F1B16;font-size:15px;color:#5A5148;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+@media (max-width:600px){body{font-size:18px}h1{font-size:34px;margin-top:44px}h2{font-size:25px}.lede{font-size:20px}}
+</style>
+<style>
+.calc{display:flex;flex-wrap:wrap;gap:36px;margin:28px 0 8px}
+.calc .inputs{flex:1 1 300px;min-width:0}
+.calc .out{flex:1 1 320px;min-width:0}
+.field{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:7px 0;border-bottom:1px dotted #CFC7B8}
+.field label{font-size:17px}
+.field .hint{display:block;font-size:14px;color:#5A5148}
+.field .in{display:flex;align-items:center;gap:4px;font-size:17px}
+.field input,.field select{font:inherit;font-size:17px;width:92px;padding:6px 8px;border:1px solid #8C8274;border-radius:2px;background:#FFFDF8;color:#1F1B16;text-align:right;min-height:40px;box-sizing:border-box}
+.field select{width:auto;text-align:left}
+.field input:focus,.field select:focus{outline:2px solid #A63A0B;outline-offset:1px}
+fieldset{border:0;margin:0 0 18px;padding:0}
+legend{font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#5A5148;margin-bottom:4px}
+.bar-row{display:grid;grid-template-columns:150px 1fr 74px;gap:10px;align-items:center;font-size:15px;margin:5px 0}
+.bar-track{height:18px;position:relative;background:transparent}
+.bar{position:absolute;top:0;height:18px;background:#8C8274}
+.bar.kept{background:#A63A0B}
+.bar.neg{background:#B91C1C}
+.bar.shelf{background:#1F1B16}
+.amt{text-align:right;font-variant-numeric:tabular-nums}
+.big{font-size:30px;font-weight:700;margin:4px 0}
+.result-box{border:1.5px solid #1F1B16;padding:18px 20px;margin:18px 0;background:#FFFDF8}
+.warn{color:#B91C1C;font-weight:600}
+.mast,nav{max-width:960px}
+html{scroll-behavior:auto}
+.locked{position:relative;border:1px dashed #8C8274;padding:22px;margin-top:20px;background:#EFEBE1}
+.locked table{width:100%;border-collapse:collapse;font-size:16px;filter:blur(3px);user-select:none;pointer-events:none}
+.locked td,.locked th{padding:6px 8px;border-bottom:1px solid #CFC7B8;text-align:left}
+.locked .over{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;gap:10px;background:rgba(247,244,236,.82)}
+.locked .over p{margin:0;max-width:440px;font-size:17px}
+@media (max-width:600px){.bar-row{grid-template-columns:110px 1fr 64px;font-size:14px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Big-box price waterfall","url":"https://rdrworks.com/price-waterfall.html","applicationCategory":"BusinessApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free calculator for product brands selling to Walmart, Lowe's, Tractor Supply and other big-box retailers: see what you keep per unit after retailer margin, allowances, early-pay discount, deductions, commission, freight and landed cost, and the lowest cost price you can quote a buyer.","creator":{"@type":"Person","name":"Jason Rider","url":"https://rdrworks.com/"}}
+</script>
+</head>
+<body>
+<header>
+<div class="mast">
+<a class="name" href="index.html">RDRWorks</a>
+<span class="tag">Retail Distribution Readiness &middot; Jason Rider</span>
+</div>
+<nav aria-label="Main">
+<a href="index.html#services">Services &amp; prices</a>
+<a href="index.html#events">Pitch events</a>
+<a href="index.html#guides">Guides</a>
+<a href="index.html#about">About</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+</header>
+<main class="page" style="max-width:960px">
+<h1>Big-box price waterfall</h1>
+
+<p class="lede">Start with the shelf price and watch what&rsquo;s left by the time the money reaches you. Then see the lowest price you can quote a buyer and still make the margin you need.</p>
+
+<p class="small">The example numbers are placeholders. Replace them with yours. Nothing you type leaves your browser.</p>
+
+<div class="calc">
+<div class="inputs">
+<fieldset><legend>The retailer</legend>
+<div class="field"><label for="shelf">Shelf price<span class="hint">What the shopper pays</span></label><span class="in">$<input id="shelf" type="number" inputmode="decimal" step="0.01" min="0" value="19.99"></span></div>
+<div class="field"><label for="margin">Retailer margin<span class="hint">Their cut, as a percent of shelf price</span></label><span class="in"><input id="margin" type="number" inputmode="decimal" step="0.1" min="0" value="40">%</span></div>
+</fieldset>
+<fieldset><legend>Taken off your invoice</legend>
+<div class="field"><label for="a1">Warehouse allowance</label><span class="in"><input id="a1" type="number" inputmode="decimal" step="0.1" min="0" value="2">%</span></div>
+<div class="field"><label for="a2">Defective / returns allowance</label><span class="in"><input id="a2" type="number" inputmode="decimal" step="0.1" min="0" value="2">%</span></div>
+<div class="field"><label for="a3">Other allowances<span class="hint">Co-op, markdown, new-item</span></label><span class="in"><input id="a3" type="number" inputmode="decimal" step="0.1" min="0" value="0">%</span></div>
+<div class="field"><label for="early">Early-pay discount<span class="hint">Only if you take early payment</span></label><span class="in"><input id="early" type="number" inputmode="decimal" step="0.1" min="0" value="1">%</span></div>
+</fieldset>
+<fieldset><legend>Your costs</legend>
+<div class="field"><label for="deduct">Deductions reserve<span class="hint">Fines and chargebacks you expect to lose</span></label><span class="in"><input id="deduct" type="number" inputmode="decimal" step="0.1" min="0" value="3">%</span></div>
+<div class="field"><label for="comm">Broker or rep commission</label><span class="in"><input id="comm" type="number" inputmode="decimal" step="0.1" min="0" value="0">%</span></div>
+<div class="field"><label for="freightmode">Freight terms<span class="hint">Who pays to move it to the retailer</span></label><span class="in"><select id="freightmode"><option value="collect">Collect (retailer picks up)</option><option value="prepaid">Prepaid (you deliver)</option></select></span></div>
+<div id="freightrow"><div class="field"><label for="freight">Freight per unit<span class="hint">Only if prepaid</span></label><span class="in">$<input id="freight" type="number" inputmode="decimal" step="0.01" min="0" value="0.00"></span></div></div>
+<div class="field"><label for="cogs">Landed cost per unit<span class="hint">Product, packaging and inbound freight</span></label><span class="in">$<input id="cogs" type="number" inputmode="decimal" step="0.01" min="0" value="4.50"></span></div>
+</fieldset>
+<fieldset><legend>Your floor</legend>
+<div class="field"><label for="target">Margin you need<span class="hint">As a percent of your cost price to the retailer</span></label><span class="in"><input id="target" type="number" inputmode="decimal" step="0.1" min="0" value="35">%</span></div>
+</fieldset>
+</div>
+<div class="out" aria-live="polite">
+<h2 style="margin-top:0;border-top:0;padding-top:0">Where the shelf price goes</h2>
+<div id="bars"></div>
+<div class="result-box">
+<div class="small">Cash you keep per unit</div>
+<div class="big" id="kept">$0.00</div>
+<div id="keptpct" class="small"></div>
+</div>
+<div class="result-box">
+<div class="small">Lowest cost price you can quote the buyer</div>
+<div class="big" id="floor">$0.00</div>
+<div id="floornote" class="small"></div>
+</div>
+</div>
+</div>
+
+<h2>Your channel ladder</h2>
+
+<p>The same product usually sells on Amazon, your own site, through wholesale and to a big-box retailer. If the prices don&rsquo;t step correctly, one channel quietly undercuts another, and the retailer will notice before you do.</p>
+
+<div class="locked">
+<table aria-hidden="true">
+<tr><th>Channel</th><th>Price</th><th>You keep</th><th>Margin</th><th>Check</th></tr>
+<tr><td>Your website</td><td>$24.99</td><td>$12.10</td><td>48%</td><td>OK</td></tr>
+<tr><td>Amazon</td><td>$22.99</td><td>$7.85</td><td>34%</td><td>OK</td></tr>
+<tr><td>Big-box</td><td>$19.99</td><td>$6.54</td><td>55%</td><td>Under Amazon</td></tr>
+<tr><td>Wholesale</td><td>$11.00</td><td>$6.10</td><td>55%</td><td>OK</td></tr>
+<tr><td>Distributor</td><td>$8.50</td><td>$3.60</td><td>42%</td><td>Thin</td></tr>
+</table>
+<div class="over">
+<p><strong>The channel ladder is part of Pricing Pro.</strong> Every channel side by side, several products at once, undercut warnings and export to Excel.</p>
+<p class="small">Pricing Pro is coming soon. It&rsquo;s included now with a Price Check, where I build your ladder with you.</p>
+<a class="button" href="https://calendar.app.google/Sritw7s5EyKaDSVr5" target="_blank" rel="noopener">Book a free call about Price Check</a>
+</div>
+</div>
+
+<h2>How the math works</h2>
+
+<p>Your cost price is the shelf price minus the retailer&rsquo;s margin. Allowances and any early-pay discount come off that invoice. The deductions reserve is a percentage of the invoice you expect to lose to fines and chargebacks. Commission comes off what you&rsquo;re paid. Freight (if you deliver) and your landed cost come off last. What&rsquo;s left is what you keep.</p>
+
+<p>The floor works the same chain backward: the lowest cost price where what you keep still equals the margin you need. Every retailer names its allowances differently, so put each of yours in the closest line.</p>
+
+<p>Want someone who&rsquo;s done this across five channels to check your numbers? That&rsquo;s <a href="index.html#services">Price Check</a>.</p>
+
+</main>
+<footer style="max-width:960px">
+<span>RDRWorks &middot; Jason Rider &middot; Fort Collins, Colorado</span>
+<span>An estimate, not accounting or legal advice. Not affiliated with any retailer.</span>
+</footer>
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const ids=["shelf","margin","a1","a2","a3","early","deduct","comm","freight","cogs","target"];
+const num=id=>{const v=parseFloat($(id).value);return isFinite(v)&&v>=0?v:0};
+const money=v=>(v<0?"-$":"$")+Math.abs(v).toFixed(2);
+function calc(){
+  const R=num("shelf"),m=num("margin")/100,A=(num("a1")+num("a2")+num("a3"))/100,d=num("early")/100,
+        r=num("deduct")/100,b=num("comm")/100,prepaid=$("freightmode").value==="prepaid",
+        f=prepaid?num("freight"):0,g=num("cogs"),t=num("target")/100;
+  $("freightrow").style.display=prepaid?"":"none";
+  const C=R*(1-m), retail=R-C, allow=C*A, afterA=C-allow, early=afterA*d, paid=afterA-early,
+        ded=C*r, comm=paid*b, kept=paid-ded-comm-f-g;
+  const rows=[["Shelf price",R,"shelf"],["Retailer margin",-retail],["Allowances",-allow],["Early-pay discount",-early],
+              ["Deductions",-ded],["Commission",-comm],["Freight",-f],["Landed cost",-g],["You keep",kept,kept<0?"neg":"kept"]];
+  const scale=R>0?R:1; let run=R, html="";
+  rows.forEach(([label,v,cls],i)=>{
+    if(i>0 && i<rows.length-1 && Math.abs(v)<0.005) return;
+    let left,width;
+    if(i===0){left=0;width=R}
+    else if(i===rows.length-1){left=Math.min(0,v);width=Math.abs(v)}
+    else{run+=v;left=Math.max(run,0);width=Math.abs(v)}
+    const lp=Math.max(0,Math.min(100,left/scale*100)), wp=Math.max(0.5,Math.min(100-lp,width/scale*100));
+    html+=`<div class="bar-row"><span>${label}</span><span class="bar-track"><span class="bar ${cls||""}" style="left:${lp}%;width:${wp}%"></span></span><span class="amt">${money(v)}</span></div>`;
+  });
+  $("bars").innerHTML=html;
+  $("kept").textContent=money(kept);
+  $("kept").className="big"+(kept<0?" warn":"");
+  $("keptpct").textContent=C>0?`${(kept/C*100).toFixed(1)}% of your $${C.toFixed(2)} cost price${kept<0?". You lose money on every unit.":""}`:"";
+  const denom=(1-A)*(1-d)*(1-b)-r-t;
+  if(denom<=0){$("floor").textContent="Not reachable";$("floornote").innerHTML='<span class="warn">With these allowances and deductions, no price gets you that margin. Lower the target or the costs.</span>';}
+  else{const Cmin=(f+g)/denom, Rmin=m<1?Cmin/(1-m):NaN;
+    $("floor").textContent=money(Cmin);
+    $("floornote").textContent=`At a ${(m*100).toFixed(1)}% retailer margin, that means a shelf price of at least ${isFinite(Rmin)?money(Rmin):"n/a"}.`+(C<Cmin?` Your current cost price is $${(Cmin-C).toFixed(2)} below it.`:` Your current cost price clears it by $${(C-Cmin).toFixed(2)}.`);}
+}
+ids.concat(["freightmode"]).forEach(id=>{$(id).addEventListener("input",calc);$(id).addEventListener("change",calc)});
+calc();
+})();
+</script>
+</body>
+</html>
